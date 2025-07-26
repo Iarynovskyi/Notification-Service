@@ -1,0 +1,31 @@
+{
+  "name": "event_platform_notification",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "homepage": "https://github.com/Iarynovskyi/Notification-Service#readme",
+  "bugs": {
+    "url": "https://github.com/Iarynovskyi/Notification-Service/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iarynovskyi/Notification-Service.git"
+  },
+  "license": "ISC",
+  "author": "Iarynovskyi Dmytro",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "kafkajs": "^2.2.4",
+    "nodemailer": "^7.0.5",
+    "pino": "^9.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
