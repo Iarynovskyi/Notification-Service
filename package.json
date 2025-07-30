@@ -13,19 +13,27 @@
   },
   "license": "ISC",
   "author": "Iarynovskyi Dmytro",
-  "main": "index.js",
+  "main": "src/service.ts",
   "scripts": {
-    "test": "test"
+    "dev": "tsx watch src/service.ts | pino-pretty",
+    "start": "node dist/service.js",
+    "build": "tsc"
   },
   "dependencies": {
     "dotenv": "^17.2.1",
+    "handlebars": "^4.7.8",
     "kafkajs": "^2.2.4",
     "nodemailer": "^7.0.5",
-    "pino": "^9.7.0"
+    "pino": "^9.7.0",
+    "pino-pretty": "^13.0.0",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
+    "@types/nodemailer": "^6.4.17",
+    "nodemon": "^3.0.1",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }
 }
